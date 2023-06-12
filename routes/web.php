@@ -30,15 +30,18 @@ Route::get('/home',[HomeController::class,'home']);
 
 Route::get('/category/list',[CategoryController::class,'list'])->name('category.list');
 Route::get('/category/form',[CategoryController::class,'form'])->name('category.form');
+Route::post('/category/store',[CategoryController::class,'store'])->name('category.store');
 
 Route::get('/product/list',[ProductController::class,'list'])->name('product.list');
 Route::get('/product/form',[ProductController::class,'form'])->name('product.form');
 
 Route::get('/brand/list',[BrandController::class,'list'])->name('brand.list');
 Route::get('/brand/form',[BrandController::class,'form'])->name('brand.form');
+Route::post('/brand/store',[BrandController::class,'store'])->name('brand.store');
 
 Route::get('/customer/list',[CustomerController::class,'list'])->name('customer.list');
 Route::get('/customer/form',[CustomerController::class,'form'])->name('customer.form');
+Route::post('/customer/store',[CustomerController::class,'store'])->name('customer.store');
 
 Route::get('/order/list',[OrderController::class,'list'])->name('order.list');
 Route::get('/order/form',[OrderController::class,'form'])->name('order.form');
